@@ -1,0 +1,57 @@
+
+   [
+     {
+    "breed": "Greyhound",
+    "name": "Margarita",
+    "age": "4yrs old",
+    "description": "She's a runner...she's a track star. Needs to stretch her legs every day so she needs a very active human."
+   },
+  {
+    "breed": "Greyhound",
+    "name": "Licorice",
+    "age": "15yrs old",
+    "description": "He is precious, with eyes that show her beautiful soul. He is an ex-racing dog of a mature age and doesn't have the energy to move around alot. The happiest when he is lounging in the sun."
+  },
+  {
+    "breed": "Greyhound",
+    "name": "CarlyK",
+    "age": "3yrs old",
+    "description": "Precious, bubbly and a great conversatinalist. Note she is obsessed with cardboard boxes. Carly will be the family member you didn't know you needed."
+  },
+  {
+    "breed": "boxer",
+    "name": "T Challa",
+    "age": "4 yrs old",
+    "description": "Acts like the king he is named after. Poised and Regal. Has a thing where he will only eat after you hand feed him a kibble first, which is absolutely adorable. Did we mention he acts like a king?  He is also very funny and loves to turn around in circles."
+  },
+  { 
+    "breed": "boxer",
+    "name": "Breezy",
+    "age": "1yr old",
+    "description": "He is very hyper. Make sure have loads of energy for this one.  If you have children in the household that's even better. Favorite food is carrots."
+  },
+  {
+    "breed": "boxer",
+    "name": "Gamora",
+    "age": "6yrs old",
+    "description": "We find Gamora to be sweet and protective. She will most likely sit next to you in guard position whenever you are in the same room. She is a smart girl.  She was taught to high five in just a few short weeks. Gamora is so cool. You will love spending your life with her. "
+  },
+  {
+    "breed": "Poodle",
+    "name": "Lady Gaga",
+    "age": "2yrs old",
+    "description": "She gives great cuddles and kisses.  Like the original Gaga, she loves to sing."
+  },
+  {
+    "breed": "Poodle",
+    "name": "Cheech",
+    "age": "6mos old",
+    "description": "He is very hyper. Make sure you have loads of energy for this one.  If you have children in the household that's even better. Favorite food is carrots."
+  },
+  {
+    "breed": "Poodle",
+    "name": "Louie",
+    "age": "5yrs old",
+    "description": "Calm, sensitive type. Louie wants lots of attention. Loves to watch movies. He will make the best addition to your family."
+  }
+]
