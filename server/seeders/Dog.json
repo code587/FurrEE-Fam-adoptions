@@ -1,0 +1,19 @@
+[
+    {
+        "breed": "Greyhound",
+        "characteristics": "Seen as a sight hound which are typically long and lean with keen vision.",
+        "behaviors": "Reserved, even considered shy. Very gentle. They are amazing runners, of course.",
+        "concerns": "Hip, neck and joint problems are common especially in ex-racers."
+    },
+     {
+        "breed": "Boxer",
+        "characteristics": "Considered to be a protection dog.",
+        "behaviors": "Confident, extremely trainable, playful, and works well with hoomans.","concerns": "Prone to eye diseases most likely due to their facial structure."
+     },
+     {  "breed": "Poodle",
+        "characteristics": "Typically viewed as a companion dog.",
+        "behaviors": "Can be considered a stage five clinger towards their hoomans.",
+        "concerns": "Hip dysplasia, progressive retinal atrophy and vocal problems are common with poodles."
+     }
+  ]
+  

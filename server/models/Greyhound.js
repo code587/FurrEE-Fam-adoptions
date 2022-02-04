@@ -16,9 +16,9 @@ const greyhoundSchema = new Schema(
       type: String,
       required: true
     },
-    available: {
+    adopt: {
       type: Schema.Types.ObjectId,
-      ref: "Available"
+      ref: "Adopt"
     }
   }
 );

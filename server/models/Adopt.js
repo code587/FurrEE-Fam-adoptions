@@ -16,6 +16,13 @@ const availableSchema = new Schema({
     description: {
         type: String,
         required: true
-    }
+    },
+    dog: {
+        type: Schema.Types.ObjectId,
+        required: "Dog"
+      }
+});
 
-})
+const Available = model('Available', availableSchema);
+
+module.exports = Available;

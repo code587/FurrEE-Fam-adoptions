@@ -14,9 +14,9 @@ const dogSchema = new Schema({
     type: String,
     required: true,
   },
-  available: {
+  adopt: {
     type: Schema.Types.ObjectId,
-    required: "available"
+    ref: "Adopt"
   }
 }
 );
