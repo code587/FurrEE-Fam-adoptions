@@ -1,5 +1,6 @@
 
-   {
+   [
+     {
     "breed": "Greyhound",
     "name": "Margarita",
     "age": "4yrs old",
@@ -53,3 +54,4 @@
     "age": "5yrs old",
     "description": "Calm, sensitive type. Louie wants lots of attention. Loves to watch movies. He will make the best addition to your family."
   }
+]

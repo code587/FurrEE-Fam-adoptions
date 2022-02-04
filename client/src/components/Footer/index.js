@@ -25,7 +25,7 @@ const Footer = () => {
           >
             ❤️
           </span>{' '}
-          by the Tech Thoughts team.
+          some angels choose fur instead of wings.
         </h4>
       </div>
     </footer>

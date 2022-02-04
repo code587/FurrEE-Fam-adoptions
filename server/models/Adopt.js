@@ -1,6 +1,6 @@
 const { Schema, model } = require('mongoose');
 
-const availableSchema = new Schema({
+const adoptSchema = new Schema({
     breed: {
         type: String,
         required: true
@@ -23,6 +23,6 @@ const availableSchema = new Schema({
       }
 });
 
-const Available = model('Available', availableSchema);
+const adopt = model('adopt', adoptSchema);
 
-module.exports = Available;
+module.exports = adopt;

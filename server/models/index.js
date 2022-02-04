@@ -1,4 +1,8 @@
 const User = require('./User');
-const Breed = require('./Dog');
+const Dog = require('./Dog');
+const Adopt = require('./Adopt');
+const Boxer = require('./Boxer');
+const Greyhound = require('./Greyhound');
+const Poodle = require('./Poodle');
 
-module.exports = { User, Breed };
+module.exports = { User, Dog, Adopt, Boxer, Greyhound, Poodle };
