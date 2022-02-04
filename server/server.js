@@ -21,7 +21,7 @@ server.applyMiddleware({ app });
 
 app.use(express.urlencoded({ extended: false }));
 app.use(express.json());
-mongoose.connect('mongodb+srv://cluster0.bmty9.mongodb.net/myFirstDatabase');
+mongoose.connect('mongodb+srv://cluster0.bmty9.mongodb.net/furree-fam-adoptions');
 
 
 if (process.env.NODE_ENV === 'production') {
