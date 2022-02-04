@@ -6,6 +6,7 @@ const { typeDefs, resolvers } = require('./schemas');
 const { authMiddleware } = require('./utils/auth');
 
 const db = require('./config/connection');
+const mongoose = require("mongoose")
 
 const PORT = process.env.PORT || 3001;
 const app = express();
@@ -20,6 +21,8 @@ server.applyMiddleware({ app });
 
 app.use(express.urlencoded({ extended: false }));
 app.use(express.json());
+mongoose.connect('mongodb+srv://cluster0.bmty9.mongodb.net/myFirstDatabase');
+
 
 if (process.env.NODE_ENV === 'production') {
   app.use(express.static(path.join(__dirname, '../client/build')));
