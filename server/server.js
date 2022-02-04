@@ -20,6 +20,7 @@ server.applyMiddleware({ app });
 
 app.use(express.urlencoded({ extended: false }));
 app.use(express.json());
+mongoose.connect('mongodb+srv://Younggonz:go00nzySalv@cluster0.bmty9.mongodb.net/furree-fam-adoptions?retryWrites=true&w=majority')
 
 if (process.env.NODE_ENV === 'production') {
   app.use(express.static(path.join(__dirname, '../client/build')));
