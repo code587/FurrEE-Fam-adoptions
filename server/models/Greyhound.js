@@ -2,20 +2,24 @@ const { Schema, model } = require('mongoose');
 
 const greyhoundSchema = new Schema(
   {
-    name: {
+    characteristics: {
       type: String,
       required: true,
       unique: true,
       trim: true
     },
-    age: {
-      type: Number,
-      required: true
-    },
-    description: {
+    behaviors: {
       type: String,
       required: true
     },
+    concerns: {
+      type: String,
+      required: true
+    },
+    available: {
+      type: Schema.Types.ObjectId,
+      ref: "Available"
+    }
   }
 );
 
