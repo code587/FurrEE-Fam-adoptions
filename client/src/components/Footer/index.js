@@ -25,7 +25,7 @@ const Footer = () => {
           >
             ❤️
           </span>{' '}
-          some angels choose fur instead of wings.
+          by the FurrEE Fam Team team.
         </h4>
       </div>
     </footer>

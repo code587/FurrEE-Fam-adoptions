@@ -11,7 +11,7 @@ function SearchForm(props) {
           name="search"
           type="text"
           className="form-control"
-          placeholder="Search For Your new family member"
+          placeholder="Search For a Specific Breed"
           id="search"
         />
         <br />
@@ -25,7 +25,6 @@ function SearchForm(props) {
       </div>
     </form>
   );
-}            
-
+}
 
 export default SearchForm;

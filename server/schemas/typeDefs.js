@@ -12,7 +12,7 @@ const typeDefs = gql`
   type Adopt {
     breed: String
     name: String
-    age: Number
+    age: String
     description: String
   }
 
@@ -31,9 +31,6 @@ const typeDefs = gql`
     users: [User]
     adopt: [Adopt]
     dog: [Dog]
-    boxer: [Boxer]
-    greyhound: [Greyhound]
-    poodle: [Poodle]
   }
 `;
 

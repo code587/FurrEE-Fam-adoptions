@@ -1,8 +1,8 @@
-// const { AuthenticationError } = require('apollo-server-express');
-// const { User, adopt, Boxer, Dog, Greyhound, Poodle } = require('../models');
-// //const { signToken } = require('../utils/auth');
+const { AuthenticationError } = require('apollo-server-express');
+const { User, Dog, Adopt } = require('../models');
+const { signToken } = require('../utils/auth');
 
-// const resolvers = {
+const resolvers = {
 //   Query: {
 //     users: async () => {
 //       return User.find().populate('thoughts');
@@ -115,6 +115,6 @@
 //       throw new AuthenticationError('You need to be logged in!');
 //     },
 //   },
-// };
+};
 
-// module.exports = resolvers;
+module.exports = resolvers;
