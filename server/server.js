@@ -26,8 +26,10 @@ async function startServer() {
     await apolloServer.start();
     apolloServer.applyMiddleware({ app });
 }
-startServer();
-// server.applyMiddleware({ app });
+
+
+// startServer();
+server.applyMiddleware({ app });
 
 app.use(express.urlencoded({ extended: false }));
 app.use(express.json());
