@@ -1,6 +1,6 @@
 const express = require('express');
 const { ApolloServer } = require('apollo-server-express');
-//const path = require('path');
+const path = require('path');
 //const mongoose = require('mongoose');
 
 const { typeDefs, resolvers } = require('./schemas');
@@ -33,7 +33,7 @@ server.applyMiddleware({ app });
 
 app.use(express.urlencoded({ extended: false }));
 app.use(express.json());
-// mongoose.connect('mongodb+srv://Younggonz:go00nzySalv@cluster0.bmty9.mongodb.net/furree-fam-adoptions?retryWrites=true&w=majority')
+
 
 if (process.env.NODE_ENV === 'production') {
   app.use(express.static(path.join(__dirname, '../client/build')));
