@@ -1,7 +1,7 @@
 const mongoose = require('mongoose');
 
 mongoose.connect(
-  process.env.MONGODB_URI || 'mongodb://localhost/FurrEE-Fam-adoptions',
+  process.env.MONGODB_URI || 'mongodb://localhost:27017/FurrEE-Fam-adoptions',
   { 
     useCreateIndex: true, 
     useFindAndModify: false, 

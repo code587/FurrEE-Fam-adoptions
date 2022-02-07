@@ -16,9 +16,9 @@ db.once('open', async () => {
   const dogs = await Dog.insertMany(dogData);
   const adopt = await Adopt.insertMany(adoptData);
   const users = await User.insertMany(userData);
-    
-  });
-
   console.log('all done!');
   process.exit(0);
+  });
+
+ 
 
