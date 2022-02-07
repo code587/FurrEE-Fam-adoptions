@@ -19,12 +19,7 @@ const userSchema = new Schema({
     required: true,
     minlength: 5,
   },
-  breed: [
-    {
-      type: Schema.Types.ObjectId,
-      ref: 'Breed',
-    },
-  ],
+
 });
 
 userSchema.pre('save', async function (next) {

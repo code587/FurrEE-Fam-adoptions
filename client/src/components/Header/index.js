@@ -125,9 +125,11 @@ const Header = () => {
               }}
             >
               {pages.map((page) => (
-                <MenuItem component={Link} to={'Login'} key={page} onClick={handleCloseNavMenu}>
+                
+                <MenuItem key={page} onClick={handleCloseNavMenu}>
                   <Typography textAlign="center">{page}</Typography>
                 </MenuItem>
+                
               ))}
             </Menu>
           </Box>
@@ -137,7 +139,7 @@ const Header = () => {
             component="div"
             sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}
           >
-            LOGO
+            
           </Typography>
           <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
             {pages.map((page) => (

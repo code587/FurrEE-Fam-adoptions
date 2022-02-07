@@ -17,12 +17,13 @@ const adoptSchema = new Schema({
         type: String,
         required: true
     },
-    dog: {
+    user: [{
         type: Schema.Types.ObjectId,
-        required: "Dog"
+        ref: "User"
       }
+    ]
 });
 
-const adopt = model('adopt', adoptSchema);
+const Adopt = model('Adopt', adoptSchema);
 
-module.exports = adopt;
+module.exports = Adopt;
