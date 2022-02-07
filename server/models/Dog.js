@@ -14,10 +14,12 @@ const dogSchema = new Schema({
     type: String,
     required: true,
   },
-  adopt: {
+  adopt: 
+    {
     type: Schema.Types.ObjectId,
     ref: "Adopt"
   }
+
 }
 );
 

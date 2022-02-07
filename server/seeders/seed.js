@@ -1,35 +1,24 @@
 const db = require('../config/connection');
-const { User, Adobp, Boxer, Dog, Greyhound, Poodle } = require('../models');
-const userSeeds = require('./userSeeds.json');
-const adoptSeeds = require('./adopt.json');
-const boxerSeeds = require('./Boxer.json');
-const dogSeeds = require('./Dog.json');
-const greyhoundSeeds = require('./Greyhound.json');
-const poodleSeeds = require('./Poodle.json')
+const { Dog, Adopt, User,} = require('../models');
+const userData = require('./userData.json');
+const adoptData = require('./adoptData.json');
+//const boxerSeeds = require('./Boxer.json');
+const dogData = require('./Dogdata.json');
+//const greyhoundSeeds = require('./Greyhound.json');
+//const poodleSeeds = require('./Poodle.json')
 
 db.once('open', async () => {
-  try {
-    await adopt.deleteMany({});
-    await User.deleteMany({});
+ 
+  await Dog.deleteMany({});
+  await Adopt.deleteMany({});
+  await User.deleteMany({});
 
-    await User.create(userSeeds);
-
-    // for (let i = 0; i < thoughtSeeds.length; i++) {
-    //   const { _id, thoughtAuthor } = await Thought.create(thoughtSeeds[i]);
-    //   const user = await User.findOneAndUpdate(
-    //     { username: thoughtAuthor },
-    //     {
-    //       $addToSet: {
-    //         thoughts: _id,
-    //       },
-    //     }
-    //   );
-    // }
-  } catch (err) {
-    console.error(err);
-    process.exit(1);
-  }
+  const dogs = await Dog.insertMany(dogData);
+  const adopt = await Adopt.insertMany(adoptData);
+  const users = await User.insertMany(userData);
+    
+  });
 
   console.log('all done!');
   process.exit(0);
-});
+
