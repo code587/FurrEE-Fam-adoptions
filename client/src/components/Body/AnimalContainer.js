@@ -3,7 +3,7 @@ import { useState, useEffect } from "react";
 import Container from "./Container";
 import Row from "./Row";
 import Col from "./Col";
-import Card from "./Card";
+import Cards from "./Cards";
 import SearchForm from "./SearchForm";
 import AnimalDetail from "./AnimalDetail";
 import API from "../../utils/API";
@@ -51,23 +51,23 @@ const AnimalContainer = () => {
           {" "}
           {images.map((image) => {
             
-            return <Card heading={image || "Search for a specific breed to begin"}>
+            return <Cards heading={image || "Search for a specific breed to begin"}>
               {image ? (
                 <AnimalDetail image={image} />
               ) : (
                 <h3>No Results to Display</h3>
               )}
-            </Card>;
+            </Cards>;
           })}
         </Col>
         <Col size="md-4">
-          <Card heading="Search">
+          <Cards heading="Search">
             <SearchForm
               value={search}
               handleInputChange={handleInputChange}
               handleFormSubmit={handleFormSubmit}
             />
-          </Card>
+          </Cards>
         </Col>
       </Row>
     </Container>
