@@ -25,7 +25,7 @@ const Footer = () => {
           >
             ❤️
           </span>{' '}
-          by the FurrEE Fam Team team.
+          by the FurrEE Fam Team.
         </h4>
       </div>
     </footer>
